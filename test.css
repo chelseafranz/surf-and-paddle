@@ -193,6 +193,9 @@ li{
   margin-left: 10px;
 
 }
+.icons:hover{
+  background-color: HSLA(206, 71%, 34%, 1);
+}
 
 h3{
   font-family:'Oswald';
@@ -254,6 +257,18 @@ h3{
   margin-top: -18px;
   margin-left: -9px;
   position: relative;
+}
+.logo{
+  float:left;
+  }
+.copyright{
+  font-family: 'Open Sans';
+  color: HSLA(205, 18%, 68%, 1);
+  margin-bottom: 10px;
+  margin-left: 199px;
+  margin-top: 26px;
+  float: left;
+  font-size: .8em;
 }
 
 .navitems{
