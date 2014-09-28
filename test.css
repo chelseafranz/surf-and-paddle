@@ -226,6 +226,7 @@ h3{
   border-width: 1px;
   clear:both;
 }
+
 .hoverbackground{
   background-color: HSLA(206, 71%, 34%, 1);
   z-index: 1;
@@ -238,18 +239,55 @@ h3{
 
 }
 
-
 .bottompictures{
   height: 325px;
   margin: -2px;
   position:relative;
   opacity: 0.4;
 }
+.posts{
+  list-style-type: none;
+  font-family: 'Oswald';
+  color: HSLA(206, 18%, 69%, 1);
+  position: absolute;
+  z-index: 100;
+  font-size: xx-large;
+  margin-top: 280px;
+  color: HSLA(204, 82%, 18%, 1);
+}
+#post1{
+  margin-right: 42px;
+  margin-left: 10px;
+}
+
+#post2{
+margin-right: 170px;
+}
+
+#post3{
+  width: 228px;
+display: block;
+margin-left: 655px;
+margin-bottom: -90px;
+margin-top: -77px;
+line-height: 36px;
+}
+
+#post4{
+float: right;
+margin-left: 967px;
+margin-top: 46px;
+}
+
 
 .bottompictures:hover{
   opacity: 1.0;
+  color: white;
+
 }
+
 .bottom{
+
   background-color:HSLA(204, 82%, 18%, 1);
   width:102%;
   height: 60px;
