@@ -1,16 +1,15 @@
-#container{
-  margins: 0;
-  height:2104px;
-  width:1282px;
-}
 header{
   background-image:   url("https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2003/assets/header.jpg");
   width: 1350px;
   height: 523px;
 }
-
+#container{
+  margins: 0;
+  height:2104px;
+  width:1282px;
+}
 .pagetitle{
-  font-family: '$open';
+  font-family: 'Open Sans';
   text-align: center;
   color: white;
   font-size: 100px;
@@ -23,7 +22,7 @@ header{
   margin-bottom: 30px;
 }
 .subheading{
-  font-family: '$open';
+  font-family: 'Open Sans';
   text-align: center;
   position: relative;
   top: 31%;
@@ -32,7 +31,7 @@ header{
   font-weight: 70;
 }
 .about{
-  font-family: $oswald;
+  font-family: 'Oswald';
   position: absolute;
   width: 200px;
   text-align: right;
@@ -40,7 +39,7 @@ header{
   right: 236px;
 }
 .search{
-  font-family: $oswald;
+  font-family: 'Oswald';
   position: absolute;
   width: 200px;
   text-align: right;
@@ -66,12 +65,12 @@ header{
   text-align: left;
   top: 26px;
   left: 204px;
-  font-family:'$open';
+  font-family:'Open Sans';
 }
 .body{
   float: left;
   width: 600px;
-  font-family: $oswald;
+  font-family: 'Oswald';
   margin-left: 160px;
   margin-top: -2px;
   margin-bottom: 0px;
@@ -79,7 +78,7 @@ header{
 }
 h1{
   margin-bottom: -15px;
-  font-family: $oswald;
+  font-family: 'Oswald';
   line-height: 67px;
   font-size: 400%;
   width: 612px;
@@ -94,10 +93,9 @@ h1{
 }
 
 aside{
-  float: right;
+   float: right;
   width: 400px;
 }
-
 li{
   display: inline;
   padding: 2px;
@@ -109,12 +107,12 @@ li{
 }
 
 .anne{
-  font-family: '$open';
+  font-family: 'Open Sans';
   font-size: 13px;
   color: HSLA(205, 18%, 68%, 1)
 }
 .anne2{
-  font-family: $oswald;
+  font-family: 'Oswald';
   color: HSLA(207, 85%, 37%, 1);
   margin-left: 79px;
   width: 80px;
@@ -122,7 +120,7 @@ li{
   margin-bottom: -19px;
 }
 .date{
-  font-family: '$open';
+  font-family: 'Open Sans';
   font-size: 13px;
   margin-left: 14px;
   color: HSLA(205, 18%, 68%, 1);
@@ -130,7 +128,7 @@ li{
 }
 .socialmedia{
   list-style-type: none;
-  font-family: '$open';
+  font-family: 'Open Sans';
   font-size:14px;
   color: HSLA(205, 18%, 68%, 1);
   margin-bottom: 48px;
@@ -138,27 +136,27 @@ li{
 }
 
 .bodytext{
-  font-family:'$open';
+  font-family:'Open Sans';
   color:HSLA(205, 8%, 44%, 1);
   margin-top: 2px;
 }
 .bodytext0{
-  font-family:'$open';
+  font-family:'Open Sans';
   color:HSLA(205, 8%, 44%, 1);
   margin-top: 36px;
 }
 .bodytext1{
-  font-family:'$open';
+  font-family:'Open Sans';
   color:HSLA(205, 8%, 44%, 1);
   margin-top: 39px;
 }
 .bodytext2{
-  font-family:'$open';
+  font-family:'Open Sans';
   color:HSLA(205, 8%, 44%, 1);
   margin-top: 37px;
 }
 .bodytext3{
-  font-family:'$open';
+  font-family:'Open Sans';
   color:HSLA(205, 8%, 44%, 1);
   margin-top: 37px;
 }
@@ -178,7 +176,7 @@ li{
 
 }
 .woahdude{
-  font-family: '$open';
+  font-family: 'Open Sans';
   color: HSLA(207, 85%, 37%, 1);
   font-size: 27px;
   margin-left: 10px;
@@ -192,7 +190,7 @@ li{
   text-align: right;
   color: HSLA(205, 18%, 68%, 1);
   text-decoration: underline;
-  font-family: '$open';
+  font-family: 'Open Sans';
   width: 277px;
   font-size:13px;
   margin-top: 3px;
@@ -201,12 +199,12 @@ li{
 
 .links{
   list-style-type: none;
-  font-family: '$open';
+  font-family: 'Open Sans';
   font-color: HSLA(0, 0%, 100%, 1);
   margin-right: 0px;
   font-size: .8em;
   margin: -24px;
-  margin-left: -51px;
+margin-left: -51px;
   }
 
 .darkgraybox{
@@ -233,14 +231,14 @@ li{
 }
 
 h3{
-  font-family: $oswald;
+  font-family: 'Oswald';
   margin-left: -23px;
   margin-top: 42px;
 
 }
 .sideparagraph{
   width: 300px;
-  font-family: '$open';
+  font-family: 'Open Sans';
   color: HSLA(206, 18%, 69%, 1);
   font-weight: .8em;
   margin-left: -24px;
@@ -249,7 +247,7 @@ h3{
 }
 
 .popularposts{
-  font-family: $oswald;
+  font-family: 'Oswald';
   color: HSLA(204, 82%, 18%, 1);
   font-size: 60px;
   margin-top: 9px;
@@ -258,7 +256,7 @@ h3{
 
 .foot{
   height: 114px;
-  width: 1350px;
+  width: 1284px;
   border-top-style: solid;
   border-color:HSLA(206, 18%, 69%, 1);
   border-width: 1px;
@@ -286,7 +284,7 @@ h3{
 }
 .posts{
   list-style-type: none;
-  font-family: $oswald;
+  font-family: 'Oswald';
   color: HSLA(206, 18%, 69%, 1);
   position: absolute;
   z-index: 100;
@@ -327,6 +325,7 @@ h3{
 }
 
 .bottom{
+
   background-color:HSLA(204, 82%, 18%, 1);
   width:102%;
   height: 120px;
@@ -345,7 +344,7 @@ h3{
   }
 
 .copyright{
-  font-family: '$open';
+  font-family: 'Open Sans';
   color: HSLA(205, 18%, 68%, 1);
   margin-bottom: 10px;
   margin-left: 229px;
@@ -355,7 +354,7 @@ h3{
 }
 
 .navitems{
-  font-family:'$open';
+  font-family:'Open Sans';
   color:HSLA(205, 18%, 68%, 1);
   font-size: .8em;
   float: right;

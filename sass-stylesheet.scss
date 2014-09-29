@@ -1,23 +1,371 @@
 $pagewidth: 1350px;
-$open: 'Open Sans';
-$oswald: 'Oswald';
+$open: $open;
+$oswald: $oswald;
 $lightgray: HSLA(206, 18%, 69%, 1);
 $darkgray: HSLA(206, 8%, 40%, 1);
 $darkblue: HSLA(204, 82%, 18%, 1);
 $lightblue:HSLA(206, 71%, 34%, 1);
 $picheight: 330px;
 
-
-
-
-
-
-#mainfont{
-  color:HSLA(205, 18%, 68%, 1);
-  font-family: 'Open Sans';
+#container{
+  margins: 0;
+  height:2104px;
+  width:1282px;
+}
+header{
+  background-image:   url("https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2003/assets/header.jpg");
+  width: $pagewidth;
+  height: 523px;
 }
 
-#nolist{
-  list-style-type: none;
+.pagetitle{
+  font-family: $open;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-weight: 400;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -75px;
+  margin-top: -9px;
+  margin-bottom: 30px;
+}
+.subheading{
+  font-family: $open;
+  text-align: center;
+  position: relative;
+  top: 31%;
+  right: 19px;
+  transform: translateY(-50%);
+  font-weight: 70;
+}
+.about{
+  font-family: $oswald;
+  position: absolute;
+  width: 200px;
+  text-align: right;
+  top: 22px;
+  right: 236px;
+}
+.search{
+  font-family: $oswald;
+  position: absolute;
+  width: 200px;
+  text-align: right;
+  top: 22px;
+  right: 139px;
+}
+.magnify{
+  position: absolute;
+  top:10;
+  right:20px;
+  width: 50px;
+}
+.logo{
+  position: absolute;
+  width: auto;
+  text-align: left;
+  top: 14px;
+  left: 146px;
+}
+.blog{
+  position: absolute;
+  width: auto;
+  text-align: left;
+  top: 26px;
+  left: 204px;
+  font-family:$open;
+}
+.body{
+  float: left;
+  width: 600px;
+  font-family: $oswald;
+  margin-left: 160px;
+  margin-top: -2px;
+  margin-bottom: 0px;
+  margin-right: 75px;
+}
+h1{
+  margin-bottom: -15px;
+  font-family: $oswald;
+  line-height: 67px;
+  font-size: 400%;
+  width: 612px;
+  color:$lightgray;
+  margin-top: 66px;
+}
+.avatar{
+  margin-left: 75px;
+  margin-right: 223px;
+  margin-top: 88px;
+}
+
+aside{
+   float: right;
+  width: 400px;
+}
+li{
   display: inline;
+  padding: 2px;
+}
+.littleavatar{
+  height: 22px;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+
+.anne{
+  font-family: $open;
+  font-size: 13px;
+  color: HSLA(205, 18%, 68%, 1)
+}
+.anne2{
+  font-family: $oswald;
+  color: HSLA(207, 85%, 37%, 1);
+  margin-left: 79px;
+  width: 80px;
+  margin-top: 6px;
+  margin-bottom: -19px;
+}
+.date{
+  font-family: $open;
+  font-size: 13px;
+  margin-left: 14px;
+  color: HSLA(205, 18%, 68%, 1);
+  text-decoration: underline;
+}
+.socialmedia{
+  list-style-type: none;
+  font-family: $open;
+  font-size:14px;
+  color: HSLA(205, 18%, 68%, 1);
+  margin-bottom: 48px;
+  margin-left: -19px;
+}
+.bodytext{
+  font-family:$open;
+  color:HSLA(205, 8%, 44%, 1);
+  margin-top: 2px;
+}
+.bodytext0{
+  font-family:$open;
+  color:HSLA(205, 8%, 44%, 1);
+  margin-top: 36px;
+}
+.bodytext1{
+  font-family:$open;
+  color:HSLA(205, 8%, 44%, 1);
+  margin-top: 39px;
+}
+.bodytext2{
+  font-family:$open;
+  color:HSLA(205, 8%, 44%, 1);
+  margin-top: 37px;
+}
+.bodytext3{
+  font-family:$open;
+  color:$lightgray;
+  margin-top: 37px;
+}
+}
+
+.quote{
+  border-style: solid;
+  border-left-color: $lightgray;
+  border-left-width: 2px;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+  height: 42px;
+  margin-left: 7px;
+  margin-top: 32px;
+  padding-top: 12px;
+
+}
+.woahdude{
+  font-family: $open;
+  color: HSLA(207, 85%, 37%, 1);
+  font-size: 27px;
+  margin-left: 10px;
+}
+.paddleboard{
+  height: 300px;
+  margin-left: -23px;
+  margin-top: 7px;
+}
+.caption{
+  text-align: right;
+  color: HSLA(205, 18%, 68%, 1);
+  text-decoration: underline;
+  font-family: $open;
+  width: 277px;
+  font-size:13px;
+  margin-top: 3px;
+  margin-left: -22px;
+}
+
+.links{
+  list-style-type: none;
+  font-family: $open;
+  font-color: HSLA(0, 0%, 100%, 1);
+  margin-right: 0px;
+  font-size: .8em;
+  margin: -24px;
+margin-left: -51px;
+  }
+
+.darkgraybox{
+  background-color:HSLA(205, 8%, 40%, 1);
+  height:45px;
+  color: white;
+  margin-left:10px;
+  margin-right: 6px;
+  display: inline;
+  padding-left: 9px;
+  padding-bottom:10px;
+  padding-top:10px;
+}
+
+.icons{
+  background-color:$lightgray;
+  width:100px;
+  padding:10px;
+  margin-left: 10px;
+
+}
+.icons:hover{
+  background-color: $lightblue;
+}
+
+h3{
+  font-family: $oswald;
+  margin-left: -23px;
+  margin-top: 42px;
+
+}
+.sideparagraph{
+  width: 300px;
+  font-family: $open;
+  color: $lightgray;
+  font-weight: .8em;
+  margin-left: -24px;
+  margin-bottom: 176px;
+  margin-top: -13PX;
+}
+
+.popularposts{
+  font-family: $oswald;
+  color: $lightgray;
+  font-size: 60px;
+  margin-top: 9px;
+  text-align: center;
+}
+
+.foot{
+  height: 114px;
+  width: 1284px;
+  border-top-style: solid;
+  border-color:$darkblue;
+  border-width: 1px;
+  clear:both;
+}
+
+.hoverbackground{
+  background-color: $lightblue;
+  z-index: 1;
+  width: 100%
+}
+.pictures{
+  width:1320px;
+  padding-left: 0px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.bottompictures{
+  height: 330px;
+  margin: -2px;
+  position:relative;
+  opacity: 0.4;
+}
+.posts{
+  list-style-type: none;
+  font-family: $oswald;
+  color: $lightgray;
+  position: absolute;
+  z-index: 100;
+  font-size: xx-large;
+  margin-top: 296px;
+}
+#post1{
+  margin-right: 42px;
+  margin-left: 7px;
+}
+
+#post2{
+  margin-right: 170px;
+  margin-left: 21px;
+}
+
+#post3{
+  width: 228px;
+  display: block;
+  margin-left: 666px;
+  margin-bottom: -90px;
+  margin-top: -77px;
+  line-height: 36px;
+}
+
+#post4{
+  float: right;
+  margin-left: 991px;
+  margin-top: 46px;
+}
+
+
+.bottompictures:hover{
+  opacity: 1.0;
+  color: white;
+
+}
+
+.bottom{
+
+  background-color:$lightgray;
+  width:102%;
+  height: 120px;
+  clear:both;
+  margin-top: -18px;
+  margin-left: -9px;
+  position: relative;
+}
+.logo2{
+  float:left;
+  position: absolute;
+  width: auto;
+  text-align: left;
+  top: 31px;
+  left: 171px;
+  }
+
+.copyright{
+  font-family: $open;
+  color: HSLA(205, 18%, 68%, 1);
+  margin-bottom: 10px;
+  margin-left: 229px;
+  margin-top: 41px;
+  float: left;
+  font-size: .8em;
+}
+
+.navitems{
+  font-family:$open;
+  color:HSLA(205, 18%, 68%, 1);
+  font-size: .8em;
+  float: right;
+  margin-top: 41px;
+  margin-right: 163px;
+  letter-spacing: .5px;
+
 }
