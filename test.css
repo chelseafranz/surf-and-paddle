@@ -1,14 +1,14 @@
-
-header{
-  background-image:   url("https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2003/assets/header.jpg");
-  width: 1350px;
-  height: 523px;
-}
 #container{
   margins: 0;
   height:2104px;
   width:1282px;
 }
+header{
+  background-image:   url("https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2003/assets/header.jpg");
+  width: 1350px;
+  height: 523px;
+}
+
 .pagetitle{
   font-family: 'Open Sans';
   text-align: center;
@@ -205,7 +205,7 @@ li{
   margin-right: 0px;
   font-size: .8em;
   margin: -24px;
-margin-left: -51px;
+  margin-left: -51px;
   }
 
 .darkgraybox{
@@ -257,7 +257,7 @@ h3{
 
 .foot{
   height: 114px;
-  width: 1284px;
+  width: 1350px;
   border-top-style: solid;
   border-color:HSLA(206, 18%, 69%, 1);
   border-width: 1px;
@@ -326,7 +326,6 @@ h3{
 }
 
 .bottom{
-
   background-color:HSLA(204, 82%, 18%, 1);
   width:102%;
   height: 120px;
