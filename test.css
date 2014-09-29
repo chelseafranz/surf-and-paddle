@@ -18,13 +18,16 @@ header{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  margin:0;
+  margin-left: -75px;
+  margin-top: -9px;
+  margin-bottom: 30px;
 }
 .subheading{
   font-family: 'Open Sans';
   text-align: center;
   position: relative;
   top: 31%;
+  right: 19px;
   transform: translateY(-50%);
   font-weight: 70;
 }
@@ -33,7 +36,7 @@ header{
   position: absolute;
   width: 200px;
   text-align: right;
-  top: 24px;
+  top: 22px;
   right: 236px;
 }
 .search{
@@ -41,8 +44,8 @@ header{
   position: absolute;
   width: 200px;
   text-align: right;
-  top: 24px;
-  right: 145px;
+  top: 22px;
+  right: 139px;
 }
 .magnify{
   position: absolute;
@@ -85,9 +88,9 @@ h1{
 
 }
 .avatar{
-  margin-left: 95px;
+  margin-left: 75px;
   margin-right: 223px;
-  margin-top: 82px;
+  margin-top: 88px;
 }
 
 aside{
@@ -100,8 +103,8 @@ li{
 }
 .littleavatar{
   height: 22px;
-  margin-top: 22px;
-  margin-left: 8px;
+  margin-top: 30px;
+  margin-left: 5px;
 }
 
 .anne{
@@ -111,12 +114,11 @@ li{
 }
 .anne2{
   font-family: 'Oswald';
-  color:HSLA(207, 85%, 37%, 1);
-  margin-left: 100px;
+  color: HSLA(207, 85%, 37%, 1);
+  margin-left: 79px;
   width: 80px;
-  margin-top: 9px;
+  margin-top: 6px;
   margin-bottom: -19px;
-
 }
 .date{
   font-family: 'Open Sans';
@@ -131,21 +133,48 @@ li{
   font-size:14px;
   color: HSLA(205, 18%, 68%, 1);
   margin-bottom: 48px;
-
+  margin-left: -19px;
 }
+
 .bodytext{
+  font-family:'Open Sans';
+  color:HSLA(205, 8%, 44%, 1);
+  margin-top: 2px;
+}
+.bodytext0{
+  font-family:'Open Sans';
+  color:HSLA(205, 8%, 44%, 1);
+  margin-top: 36px;
+}
+.bodytext1{
+  font-family:'Open Sans';
+  color:HSLA(205, 8%, 44%, 1);
+  margin-top: 39px;
+}
+.bodytext2{
   font-family:'Open Sans';
   color:HSLA(205, 8%, 44%, 1);
   margin-top: 37px;
 }
-.block{
+.bodytext3{
+  font-family:'Open Sans';
+  color:HSLA(205, 8%, 44%, 1);
+  margin-top: 37px;
+}
+}
+
+.quote{
   border-style: solid;
   border-left-color: HSLA(205, 18%, 68%, 1);
   border-left-width: 2px;
   border-bottom: none;
   border-right: none;
   border-top: none;
-  height: 53px;
+  height: 42px;
+  margin-left: 7px;
+  margin-top: 32px;
+  padding-top: 12px;
+
 }
 .woahdude{
   font-family: 'Open Sans';
@@ -155,6 +184,8 @@ li{
 }
 .paddleboard{
   height: 300px;
+  margin-left: -23px;
+  margin-top: 7px;
 }
 .caption{
   text-align: right;
@@ -163,7 +194,8 @@ li{
   font-family: 'Open Sans';
   width: 277px;
   font-size:13px;
-  margin-top: 0px;
+  margin-top: 3px;
+  margin-left: -22px;
 }
 
 .links{
@@ -172,6 +204,8 @@ li{
   font-color: HSLA(0, 0%, 100%, 1);
   margin-right: 0px;
   font-size: .8em;
+  margin: -24px;
+margin-left: -51px;
   }
 
 .darkgraybox{
@@ -198,28 +232,31 @@ li{
 }
 
 h3{
-  font-family:'Oswald';
-  margin-left: 10px;
+  font-family: 'Oswald';
+  margin-left: -23px;
+  margin-top: 42px;
+
 }
 .sideparagraph{
   width: 300px;
   font-family: 'Open Sans';
-  color:HSLA(206, 18%, 69%, 1);
+  color: HSLA(206, 18%, 69%, 1);
   font-weight: .8em;
-  margin-left: 10px;
+  margin-left: -24px;
   margin-bottom: 176px;
+  margin-top: -13PX;
 }
 
 .popularposts{
   font-family: 'Oswald';
   color: HSLA(204, 82%, 18%, 1);
   font-size: 60px;
-  margin-top: 26px;
+  margin-top: 9px;
   text-align: center;
 }
 
 .foot{
-  height: 200px;
+  height: 114px;
   width: 1284px;
   border-top-style: solid;
   border-color:HSLA(206, 18%, 69%, 1);
@@ -230,17 +267,18 @@ h3{
 .hoverbackground{
   background-color: HSLA(206, 71%, 34%, 1);
   z-index: 1;
+  width: 100%
 }
 .pictures{
-  width:1300px;
+  width:1320px;
   padding-left: 0px;
-  margin-left: -6px;
+  margin-left: 3px;
   cursor: pointer;
 
 }
 
 .bottompictures{
-  height: 325px;
+  height: 330px;
   margin: -2px;
   position:relative;
   opacity: 0.4;
@@ -252,31 +290,32 @@ h3{
   position: absolute;
   z-index: 100;
   font-size: xx-large;
-  margin-top: 280px;
+  margin-top: 296px;
   color: HSLA(204, 82%, 18%, 1);
 }
 #post1{
   margin-right: 42px;
-  margin-left: 10px;
+  margin-left: 7px;
 }
 
 #post2{
-margin-right: 170px;
+  margin-right: 170px;
+  margin-left: 21px;
 }
 
 #post3{
   width: 228px;
-display: block;
-margin-left: 655px;
-margin-bottom: -90px;
-margin-top: -77px;
-line-height: 36px;
+  display: block;
+  margin-left: 666px;
+  margin-bottom: -90px;
+  margin-top: -77px;
+  line-height: 36px;
 }
 
 #post4{
-float: right;
-margin-left: 967px;
-margin-top: 46px;
+  float: right;
+  margin-left: 991px;
+  margin-top: 46px;
 }
 
 
@@ -290,21 +329,27 @@ margin-top: 46px;
 
   background-color:HSLA(204, 82%, 18%, 1);
   width:102%;
-  height: 60px;
+  height: 120px;
   clear:both;
   margin-top: -18px;
   margin-left: -9px;
   position: relative;
 }
-.logo{
+.logo2{
   float:left;
+  position: absolute;
+  width: auto;
+  text-align: left;
+  top: 31px;
+  left: 171px;
   }
+
 .copyright{
   font-family: 'Open Sans';
   color: HSLA(205, 18%, 68%, 1);
   margin-bottom: 10px;
-  margin-left: 199px;
-  margin-top: 26px;
+  margin-left: 229px;
+  margin-top: 41px;
   float: left;
   font-size: .8em;
 }
@@ -314,7 +359,8 @@ margin-top: 46px;
   color:HSLA(205, 18%, 68%, 1);
   font-size: .8em;
   float: right;
-  margin-top: 20px;
-  margin-right: 167px;
+  margin-top: 41px;
+  margin-right: 163px;
+  letter-spacing: .5px;
 
 }
