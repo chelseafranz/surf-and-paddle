@@ -1,86 +1,133 @@
 $pagewidth: 1350px;
-$open: $open;
-$oswald: $oswald;
-$lightgray: HSLA(206, 18%, 69%, 1);
+$font1: 'Oswald';
+$font2: 'Open Sans';
+$topbuttons: 200px;
 $darkgray: HSLA(206, 8%, 40%, 1);
+$lightgray: HSLA(206, 18%, 69%, 1);
+$lightblue: HSLA(206, 71%, 34%, 1);
 $darkblue: HSLA(204, 82%, 18%, 1);
-$lightblue:HSLA(206, 71%, 34%, 1);
-$picheight: 330px;
 
-#container{
-  margins: 0;
-  height:2104px;
-  width:1282px;
+@mixin absolute($top, $right){
+	top: $top;
+	right: $right;
+	position: absolute;
 }
+
+@mixin leftabsolute($top, $left){
+  top: $top;
+  left: $left;
+  position:absolute;
+  }
+@mixin position-rel{
+  	position: relative;
+  	text-align: center;
+  }
+@mixin float-l($width){
+  	float: left;
+  	width: $width;
+  }
+ @mixin float-r($width){
+  	float: right;
+  	width: $width;
+  }
+@mixin bodytext($top){
+  	margin-top: $top;
+  	color: HSLA(205, 8%, 44%, 1);
+  	font-family: $font2;
+  }
+@mixin post-titles($m-right, $m-left){
+  	margin-right: $m-right;
+  	margin-left: $m-left;
+  }
+
 header{
-  background-image:   url("https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2003/assets/header.jpg");
+  background-image:url("https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2003/assets/header.jpg");
   width: $pagewidth;
   height: 523px;
 }
+#container{
+  margins: 0;
+  height:2104px;
+  width:$pagewidth;
+}
 
 .pagetitle{
-  font-family: $open;
-  text-align: center;
+  @include position-rel;
+  font-family: $font2;
+
+  /*text-align: center;
+  position: relative;*/
   color: white;
   font-size: 100px;
   font-weight: 400;
-  position: relative;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   margin-left: -75px;
   margin-top: -9px;
   margin-bottom: 30px;
 }
 .subheading{
-  font-family: $open;
-  text-align: center;
-  position: relative;
+  @include position-rel;
+  font-family: $font2;
+ /* text-align: center;
+  position: relative;*/
   top: 31%;
   right: 19px;
   transform: translateY(-50%);
   font-weight: 70;
 }
+
 .about{
-  font-family: $oswald;
-  position: absolute;
-  width: 200px;
+  @include absolute(22px, 236px);
+  font-family: $font1;
+  width: $topbuttons;
   text-align: right;
-  top: 22px;
+ /* top: 22px;
   right: 236px;
+  position: absolute;*/
 }
 .search{
-  font-family: $oswald;
-  position: absolute;
-  width: 200px;
+  @include absolute(22px, 139px);
+  font-family: $font1;
+  width: $topbuttons;
   text-align: right;
-  top: 22px;
+  /*top: 22px;
   right: 139px;
+  position: absolute;*/
 }
 .magnify{
-  position: absolute;
-  top:10;
-  right:20px;
+  @include absolute(20px, 50px);
+  /*position: absolute;
+  top:10px;
+  right:20px;*/
   width: 50px;
 }
+
+
 .logo{
-  position: absolute;
+  @include leftabsolute(14px, 146px);
+  /*position: absolute;
+  top: 14px;
+  left: 146px;*/
   width: auto;
   text-align: left;
-  top: 14px;
-  left: 146px;
+
 }
 .blog{
-  position: absolute;
+  @include leftabsolute(26px, 204px);
+  /*position: absolute;
+  top: 26px;
+  left: 204px;*/
   width: auto;
   text-align: left;
-  top: 26px;
-  left: 204px;
-  font-family:$open;
+  font-family:$font2;
 }
+
 .body{
-  float: left;
-  width: 600px;
-  font-family: $oswald;
+  @include float-l(600px);
+  /*float: left;
+  width: 600px;*/
+  font-family: $font1;
   margin-left: 160px;
   margin-top: -2px;
   margin-bottom: 0px;
@@ -88,12 +135,13 @@ header{
 }
 h1{
   margin-bottom: -15px;
-  font-family: $oswald;
+  font-family: $font1;
   line-height: 67px;
   font-size: 400%;
   width: 612px;
-  color:$lightgray;
+  color:HSLA(204, 82%, 18%, 1);
   margin-top: 66px;
+
 }
 .avatar{
   margin-left: 75px;
@@ -102,8 +150,9 @@ h1{
 }
 
 aside{
-   float: right;
-  width: 400px;
+  @include float-r(400px);
+  /* float: right;
+  width: 400px;*/
 }
 li{
   display: inline;
@@ -116,12 +165,12 @@ li{
 }
 
 .anne{
-  font-family: $open;
+  font-family: $font2;
   font-size: 13px;
   color: HSLA(205, 18%, 68%, 1)
 }
 .anne2{
-  font-family: $oswald;
+  font-family: $font1;
   color: HSLA(207, 85%, 37%, 1);
   margin-left: 79px;
   width: 80px;
@@ -129,7 +178,7 @@ li{
   margin-bottom: -19px;
 }
 .date{
-  font-family: $open;
+  font-family: $font2;
   font-size: 13px;
   margin-left: 14px;
   color: HSLA(205, 18%, 68%, 1);
@@ -137,42 +186,49 @@ li{
 }
 .socialmedia{
   list-style-type: none;
-  font-family: $open;
+  font-family: $font2;
   font-size:14px;
   color: HSLA(205, 18%, 68%, 1);
   margin-bottom: 48px;
   margin-left: -19px;
 }
+
+
 .bodytext{
-  font-family:$open;
+  @include bodytext(2px);
+  /*font-family:'Open Sans';
   color:HSLA(205, 8%, 44%, 1);
-  margin-top: 2px;
+  margin-top: 2px;*/
 }
 .bodytext0{
-  font-family:$open;
+  @include bodytext(36px);
+  /*font-family:'Open Sans';
   color:HSLA(205, 8%, 44%, 1);
-  margin-top: 36px;
+  margin-top: 36px;*/
 }
 .bodytext1{
-  font-family:$open;
+  @include bodytext(39px);
+  /*font-family:'Open Sans';
   color:HSLA(205, 8%, 44%, 1);
-  margin-top: 39px;
+  margin-top: 39px;*/
 }
 .bodytext2{
-  font-family:$open;
+  @include bodytext(37px);
+  /*font-family:'Open Sans';
   color:HSLA(205, 8%, 44%, 1);
-  margin-top: 37px;
+  margin-top: 37px;*/
 }
 .bodytext3{
-  font-family:$open;
-  color:$lightgray;
-  margin-top: 37px;
+  @include bodytext(37px);
+  /*font-family:'Open Sans';
+  color:HSLA(205, 8%, 44%, 1);
+  margin-top: 37px;*/
 }
-}
+
 
 .quote{
   border-style: solid;
-  border-left-color: $lightgray;
+  border-left-color: HSLA(205, 18%, 68%, 1);
   border-left-width: 2px;
   border-bottom: none;
   border-right: none;
@@ -181,10 +237,10 @@ li{
   margin-left: 7px;
   margin-top: 32px;
   padding-top: 12px;
-
 }
+
 .woahdude{
-  font-family: $open;
+  font-family: 'Open Sans';
   color: HSLA(207, 85%, 37%, 1);
   font-size: 27px;
   margin-left: 10px;
@@ -198,7 +254,7 @@ li{
   text-align: right;
   color: HSLA(205, 18%, 68%, 1);
   text-decoration: underline;
-  font-family: $open;
+  font-family: 'Open Sans';
   width: 277px;
   font-size:13px;
   margin-top: 3px;
@@ -207,16 +263,16 @@ li{
 
 .links{
   list-style-type: none;
-  font-family: $open;
+  font-family: 'Open Sans';
   font-color: HSLA(0, 0%, 100%, 1);
   margin-right: 0px;
   font-size: .8em;
   margin: -24px;
-margin-left: -51px;
+  margin-left: -51px;
   }
 
 .darkgraybox{
-  background-color:HSLA(205, 8%, 40%, 1);
+  background-color:$darkgray;
   height:45px;
   color: white;
   margin-left:10px;
@@ -232,21 +288,21 @@ margin-left: -51px;
   width:100px;
   padding:10px;
   margin-left: 10px;
-
-}
-.icons:hover{
+  &:hover{
   background-color: $lightblue;
 }
+}
+
 
 h3{
-  font-family: $oswald;
+  font-family: $font1;
   margin-left: -23px;
   margin-top: 42px;
 
 }
 .sideparagraph{
   width: 300px;
-  font-family: $open;
+  font-family: $font2;
   color: $lightgray;
   font-weight: .8em;
   margin-left: -24px;
@@ -255,8 +311,8 @@ h3{
 }
 
 .popularposts{
-  font-family: $oswald;
-  color: $lightgray;
+  font-family: $font1;
+  color: $darkblue;
   font-size: 60px;
   margin-top: 9px;
   text-align: center;
@@ -266,7 +322,7 @@ h3{
   height: 114px;
   width: 1284px;
   border-top-style: solid;
-  border-color:$darkblue;
+  border-color:$lightgray;
   border-width: 1px;
   clear:both;
 }
@@ -277,7 +333,7 @@ h3{
   width: 100%
 }
 .pictures{
-  width:1320px;
+  width:$pagewidth;
   padding-left: 0px;
   margin-left: 3px;
   cursor: pointer;
@@ -288,24 +344,31 @@ h3{
   margin: -2px;
   position:relative;
   opacity: 0.4;
+  &:hover{
+  opacity: 1.0;
+  color: white;
+}
 }
 .posts{
   list-style-type: none;
-  font-family: $oswald;
+  font-family: $font1;
   color: $lightgray;
   position: absolute;
   z-index: 100;
   font-size: xx-large;
   margin-top: 296px;
+  color: $darkblue;
 }
 #post1{
-  margin-right: 42px;
-  margin-left: 7px;
+  @include post-titles(42px, 7px);
+  /*margin-right: 42px;
+  margin-left: 7px;*/
 }
 
 #post2{
-  margin-right: 170px;
-  margin-left: 21px;
+  @include post-titles(42px, 20px);
+  /*margin-right: 170px;
+  margin-left: 21px;*/
 }
 
 #post3{
@@ -324,15 +387,13 @@ h3{
 }
 
 
-.bottompictures:hover{
+/*.bottompictures:hover{
   opacity: 1.0;
   color: white;
-
-}
+}*/
 
 .bottom{
-
-  background-color:$lightgray;
+  background-color:HSLA(204, 82%, 18%, 1);
   width:102%;
   height: 120px;
   clear:both;
@@ -341,16 +402,18 @@ h3{
   position: relative;
 }
 .logo2{
-  float:left;
+  @include float-l(auto);
+  /*float:left;
+  width: auto;*/
   position: absolute;
-  width: auto;
   text-align: left;
   top: 31px;
   left: 171px;
   }
 
 .copyright{
-  font-family: $open;
+
+  font-family: 'Open Sans';
   color: HSLA(205, 18%, 68%, 1);
   margin-bottom: 10px;
   margin-left: 229px;
@@ -360,8 +423,8 @@ h3{
 }
 
 .navitems{
-  font-family:$open;
-  color:HSLA(205, 18%, 68%, 1);
+  font-family:$font2;
+  color:$lightgray;
   font-size: .8em;
   float: right;
   margin-top: 41px;
