@@ -1,3 +1,3 @@
 <h1>Surf & Paddle Project</h1>
-Recreated a a web page--pexel perfect--based on a pdf.
+Recreated a a web page--pixel perfect--based on a pdf.
 
